@@ -78,7 +78,7 @@ RUN git clone https://github.com/libsdl-org/sdl12-compat.git && \
 
 # Install gl4es
 WORKDIR /root
-RUN git clone https://github.com/ptitSeb/gl4es.git && \
+RUN git clone https://github.com/bonus630/gl4es.git && \
     cd gl4es && \
     mkdir build && cd build && \
     cmake .. -DNOX11=ON -DGLX_STUBS=ON -DEGL_WRAPPER=ON -DGBM=ON && \
