@@ -58,7 +58,7 @@ RUN apt update && \
     libsdl-gfx1.2-dev 
 
 RUN apt update
-
+RUN apt install -y build-essential cmake libgbm-dev libegl1-mesa-dev libx11-dev libxext-dev
 RUN ln -s /usr/include/libdrm/ /usr/include/drm
 
 # Install meson
